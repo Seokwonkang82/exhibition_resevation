@@ -1,4 +1,3 @@
-
 package exhibition.reservation.external;
 
 import org.springframework.cloud.openfeign.FeignClient;
@@ -10,14 +9,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import java.util.Date;
 
 
-@FeignClient(name="exhibition", url="http://exhibition:8082")
+@FeignClient(name="exhibition", url="http://localhost:8081")
 public interface ExhibitionService {
 
     //@RequestMapping(method= RequestMethod.GET, path="/exhibitions")
     //public void getStatus(@RequestBody Exhibition exhibition);
 
     @RequestMapping(method= RequestMethod.GET, value="/exhibitions/{id}", consumes = "application/json")
-    public Exhibition getstatus(@PathVariable("id") Long id);
+    public Exhibition getExhibitionStatus(@PathVariable("id") Long id);
 
 
 }
