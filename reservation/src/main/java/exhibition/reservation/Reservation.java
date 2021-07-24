@@ -35,13 +35,12 @@ public class Reservation {
         BeanUtils.copyProperties(this, reservationCreated);
         reservationCreated.publishAfterCommit();
 
-        //Following code causes dependency to external APIs
-        // it is NOT A GOOD PRACTICE. instead, Event-Policy mapping is recommended.
+             exhibition.reservation.external.Exhibition exhibition = new exhibition.reservation.external.Exhibition();
 
-        exhibition.reservation.external.Exhibition exhibition = new exhibition.reservation.external.Exhibition();
-        // mappings goes here
-        Application.applicationContext.getBean(exhibition.reservation.external.ExhibitionService.class)
-            .getStatus(exhibition);
+             exhibition = ReservationApplication.applicationContext.getBean(exhibition.reservation.external.ExhibitionService.class)
+             .getstatus(exhibitionId);
+
+
 
     }
 
