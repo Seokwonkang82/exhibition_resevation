@@ -19,9 +19,6 @@ public class Reservation {
     private String exhibitionType;
     private String memberName;
 
-    @PostPersist
-    public void onPostPersist(){
-    }
     @PostUpdate
     public void onPostUpdate(){
         ResevationCancelled resevationCancelled = new ResevationCancelled();
@@ -30,19 +27,37 @@ public class Reservation {
 
     }
     @PrePersist
-    public void onPrePersist(){
-        ReservationCreated reservationCreated = new ReservationCreated();
-        BeanUtils.copyProperties(this, reservationCreated);
-        reservationCreated.publishAfterCommit();
+    public void onPrePersist() throws Exception {
 
              exhibition.reservation.external.Exhibition exhibition = new exhibition.reservation.external.Exhibition();
 
              exhibition = ReservationApplication.applicationContext.getBean(exhibition.reservation.external.ExhibitionService.class)
-             .getstatus(exhibitionId);
+             .getExhibitionStatus(exhibitionId);
 
-
+        // 예약 가능상태 여부에 따라 처리
+        if ("Available".equals(exhibition.getExhibitionStatus())){
+            this.setExhibitionName(exhibition.getExhibitionName());
+            this.setExhibitionDate(exhibition.getExhibitionDate());
+            this.setExhibitionType(exhibition.getExhibitionType());
+            //this.setResortType(resort.getResortType());
+            this.setExhibitionStatus("Confirmed");
+        } else {
+            throw new Exception("The resort is not in a usable status.");
+        }    
 
     }
+    
+    @PostPersist
+    public void onPostPersist() throws Exception {
+
+        ReservationCreated reservationCreated = new ReservationCreated();
+        BeanUtils.copyProperties(this, reservationCreated);
+        reservationCreated.publishAfterCommit();
+
+        
+    }
+
+
 
     public Long getId() {
         return id;
