@@ -1,0 +1,66 @@
+package exhibition.reservation;
+
+public class ReservationCreated extends AbstractEvent {
+
+    private Long id;
+    private Long exhibitionId;
+    private String exhibitionName;
+    private String exhibitionStatus;
+    private String exhibitionDate;
+    private String exhibitionType;
+    private String memberName;
+
+    public ReservationCreated(){
+        super();
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+    public Long getExhibitionId() {
+        return exhibitionId;
+    }
+
+    public void setExhibitionId(Long exhibitionId) {
+        this.exhibitionId = exhibitionId;
+    }
+    public String getExhibitionName() {
+        return exhibitionName;
+    }
+
+    public void setExhibitionName(String exhibitionName) {
+        this.exhibitionName = exhibitionName;
+    }
+    public String getExhibitionStatus() {
+        return exhibitionStatus;
+    }
+
+    public void setExhibitionStatus(String exhibitionStatus) {
+        this.exhibitionStatus = exhibitionStatus;
+    }
+    public String getExhibitionDate() {
+        return exhibitionDate;
+    }
+
+    public void setExhibitionDate(String exhibitionDate) {
+        this.exhibitionDate = exhibitionDate;
+    }
+    public String getExhibitionType() {
+        return exhibitionType;
+    }
+
+    public void setExhibitionType(String exhibitionType) {
+        this.exhibitionType = exhibitionType;
+    }
+    public String getMemberName() {
+        return memberName;
+    }
+
+    public void setMemberName(String memberName) {
+        this.memberName = memberName;
+    }
+}
