@@ -52,11 +52,11 @@ public class ReservationCreated extends AbstractEvent {
     public void setExhibitionType(String exhibitionType) {
         this.exhibitionType = exhibitionType;
     }
-    public String getMemberNam() {
+    public String getMemberName() {
         return memberName;
     }
 
-    public void setMemberNam(String memberName) {
+    public void setMemberName(String memberName) {
         this.memberName = memberName;
     }
 }
