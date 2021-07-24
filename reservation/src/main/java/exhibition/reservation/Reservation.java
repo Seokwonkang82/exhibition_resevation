@@ -42,7 +42,7 @@ public class Reservation {
             //this.setResortType(resort.getResortType());
             this.setExhibitionStatus("Confirmed");
         } else {
-            throw new Exception("The resort is not in a usable status.");
+            throw new Exception("The exhibition is not in a usable status.");
         }    
 
     }
