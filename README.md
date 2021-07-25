@@ -289,39 +289,18 @@ server:
 
 ```java
 # (reservation) ExhibitionService.java
-
-
-
-
 ```
 
 ![exhibitionservice](https://user-images.githubusercontent.com/86943781/126901422-51d02f4c-d2d4-4e9d-b0d0-39c86ada2eed.png)
 
-
-- 예약을 처리 하기 직전(@PrePersist)에 ResortSevice를 호출하여 서비스 상태와 Resort 세부정보도 가져온다.
+- 예약을 처리 하기 직전(@PrePersist)에 ResortSevice를 호출하여 서비스 상태와 Exhibition 세부정보도 가져온다.
+ 
 ```java
 # Reservation.java (Entity)
-
-    @PrePersist
-    public void onPrePersist() throws Exception {
-        resortreservation.external.Resort resort = new resortreservation.external.Resort();
-       
-        //Resort 서비스에서 Resort의 상태를 가져옴
-        resort = ReservationApplication.applicationContext.getBean(resortreservation.external.ResortService.class)
-            .getResortStatus(resortId);
-
-        // 예약 가능상태 여부에 따라 처리
-        if ("Available".equals(resort.getResortStatus())){
-            this.setResortName(resort.getResortName());
-            this.setResortPeriod(resort.getResortPeriod());
-            this.setResortPrice(resort.getResortPrice());
-            this.setResortType(resort.getResortType());
-            this.setResortStatus("Confirmed");
-        } else {
-            throw new Exception("The resort is not in a usable status.");
-        }
-    }
 ```
+
+![reservation](https://user-images.githubusercontent.com/86943781/126901556-35cba206-e16c-44e1-a8cf-a94cf6baef5e.png)
+
 
 - 동기식 호출에서는 호출 시간에 따른 타임 커플링이 발생하며, 시스템이 장애로 예약을 못받는다는 것을 확인
 <img width="1019" alt="image" src="https://user-images.githubusercontent.com/85722851/125232225-2174fc80-e317-11eb-9186-98995cf27f97.png">
