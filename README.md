@@ -166,24 +166,30 @@ http aa9c6a809425d45b69b139edc5237d53-1942883713.ap-northeast-2.elb.amazonaws.co
 
 server:
   port: 8088
+
 ---
+
 spring:
   profiles: default
   cloud:
     gateway:
       routes:
-        - id: reservation
+        - id: exhibition
           uri: http://localhost:8081
           predicates:
-            - Path=/reservations/** 
-        - id: resort
+            - Path=/exhibitions/** 
+        - id: reservation
           uri: http://localhost:8082
           predicates:
-            - Path=/resorts/** 
+            - Path=/reservations/** 
         - id: mypage
           uri: http://localhost:8083
           predicates:
-            - Path= /myPages/**
+            - Path= /mypages/**
+        - id: voucher
+          uri: http://localhost:8084
+          predicates:
+            - Path=/vouchers/** 
       globalcors:
         corsConfigurations:
           '[/**]':
@@ -194,24 +200,31 @@ spring:
             allowedHeaders:
               - "*"
             allowCredentials: true
+
+
 ---
+
 spring:
   profiles: docker
   cloud:
     gateway:
       routes:
+        - id: exhibition
+          uri: http://exhibition:8080
+          predicates:
+            - Path=/exhibitions/** 
         - id: reservation
           uri: http://reservation:8080
           predicates:
             - Path=/reservations/** 
-        - id: resort
-          uri: http://resort:8080
-          predicates:
-            - Path=/resorts/** 
         - id: mypage
           uri: http://mypage:8080
           predicates:
-            - Path= /myPages/**
+            - Path= /mypages/**
+        - id: voucher
+          uri: http://voucher:8080
+          predicates:
+            - Path=/vouchers/** 
       globalcors:
         corsConfigurations:
           '[/**]':
@@ -222,9 +235,11 @@ spring:
             allowedHeaders:
               - "*"
             allowCredentials: true
+
 server:
   port: 8080
-```
+  
+``` 
 ## 폴리글랏 퍼시스턴스
 - CQRS 를 위한 mypage 서비스만 DB를 구분하여 적용함. 인메모리 DB인 hsqldb 사용.
 ```
