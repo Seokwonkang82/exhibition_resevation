@@ -68,12 +68,13 @@
 
 
 ### 어그리게잇과 바운디드 컨텍스트로 묶기
-![event4](https://user-images.githubusercontent.com/86943781/126898894-8ab1b66b-89de-4e66-b1b8-3d3323d36440.png)
+![event4](https://user-images.githubusercontent.com/86943781/126899016-f6061c84-f4d1-45d1-93dd-8f6b697356e1.png)
 
 
 ### 폴리시의 이동과 컨텍스트 매핑 (점선은 Pub/Sub, 실선은 Req/Resp)
 
-<img width="994" alt="image" src="https://user-images.githubusercontent.com/85722729/125240556-3bb5d700-e325-11eb-9bcf-d9c4d4d08e32.png">
+![event5](https://user-images.githubusercontent.com/86943781/126899024-98eed36a-7768-44af-b193-421c4566b16c.png)
+
 
 ### 완성된 모형
 ![diagram](https://user-images.githubusercontent.com/86943781/126889711-cd147434-1962-45d5-8e66-5405d281fb88.png)
