@@ -13,7 +13,7 @@ public class Mypage {
         private String memberName;
         private Long exhibitionId;
 //        private Long reservationId;
-        private Long voucherId;
+//        private Long voucherId;
         private String exhibitionName;
         private String exhibitionStatus;
         private String exhibitionDate;
@@ -48,13 +48,13 @@ public class Mypage {
 //        public void setReservationId(Long reservationId) {
 //            this.reservationId = reservationId;
 //        }
-        public Long getVoucherId() {
-            return voucherId;
-        }
+//        public Long getVoucherId() {
+//            return voucherId;
+//        }
 
-        public void setVoucherId(Long voucherId) {
-            this.voucherId = voucherId;
-        }
+//        public void setVoucherId(Long voucherId) {
+//            this.voucherId = voucherId;
+//        }
         public String getExhibitionName() {
             return exhibitionName;
         }
