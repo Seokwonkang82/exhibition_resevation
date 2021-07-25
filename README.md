@@ -151,9 +151,10 @@ http aa9c6a809425d45b69b139edc5237d53-1942883713.ap-northeast-2.elb.amazonaws.co
 
 |MSA|기능|port|URL|
 | :--: | :--: | :--: | :--: |
-|reservation| 예약정보 관리 |8081|http://localhost:8081/reservations|
-|resort| 리조트 관리 |8082|http://localhost:8082/resorts|
-|mypage| 예약내역 조회 |8083|http://localhost:8086/mypages|
+|resort| 전시회 관리 |8081|http://localhost:8081/exhibitions|
+|reservation| 예약정보 관리 |8082|http://localhost:8082/reservations|
+|mypage| 예약내역 조회 |8083|http://localhost:8083/mypages|
+|voucher| 바우처 관리 |8084|http://localhost:8084/vouchers|
 |gateway| gateway |8088|http://localhost:8088|
 
 ## Gateway 적용
