@@ -64,7 +64,7 @@
 
 
 ### 액터, 커맨드, 폴리시 부착
-![event3](https://user-images.githubusercontent.com/86943781/126898889-aa08ee11-f0cd-42d4-93a0-d15be898db4c.png)
+![event3](https://user-images.githubusercontent.com/86943781/126899133-a1865b66-ff32-408a-a35c-01d1cf55eff4.png)
 
 
 ### 어그리게잇과 바운디드 컨텍스트로 묶기
