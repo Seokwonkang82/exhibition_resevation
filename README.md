@@ -64,10 +64,12 @@
 
 
 ### 액터, 커맨드 부착하여 읽기 좋게
-<img width="994" alt="image" src="https://user-images.githubusercontent.com/85722729/125240560-3ce70400-e325-11eb-826d-8c16ca723bc4.png">
+![event3](https://user-images.githubusercontent.com/86943781/126898889-aa08ee11-f0cd-42d4-93a0-d15be898db4c.png)
+
 
 ### 어그리게잇으로 묶기
-<img width="994" alt="image" src="https://user-images.githubusercontent.com/85722729/125240563-3ce70400-e325-11eb-88b7-ae0f673b22c0.png">
+![event4](https://user-images.githubusercontent.com/86943781/126898894-8ab1b66b-89de-4e66-b1b8-3d3323d36440.png)
+
 
 ### 바운디드 컨텍스트로 묶기
 <img width="994" alt="image" src="https://user-images.githubusercontent.com/85722729/125240566-3d7f9a80-e325-11eb-9602-65894469d7e8.png">
