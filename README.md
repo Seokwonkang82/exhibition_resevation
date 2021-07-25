@@ -1,3 +1,4 @@
+![hexa](https://user-images.githubusercontent.com/86943781/126889395-974f9bdb-0eec-43c0-8a29-a2f060379f58.png)
 
 # 전시회_예약시스템
 ![gallary](https://user-images.githubusercontent.com/86943781/126889014-7a965a01-9d65-4070-95f0-790d9afe4f52.png)
@@ -87,9 +88,8 @@
   - General : payment, voucher
 
 ## 헥사고날 아키텍처 다이어그램 도출
-    
-![image](https://user-images.githubusercontent.com/85722729/125151798-bcd56880-e183-11eb-876b-074a02d94116.png)
 
+![hexa](https://user-images.githubusercontent.com/86943781/126889396-7421e566-e622-4cab-b2cf-33c91c92c1dd.png)
 
 
     - Chris Richardson, MSA Patterns 참고하여 Inbound adaptor와 Outbound adaptor를 구분함
