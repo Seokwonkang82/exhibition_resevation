@@ -56,10 +56,12 @@
 
 
 ### 이벤트 도출
-<img width="994" alt="image" src="https://user-images.githubusercontent.com/85722729/125240557-3c4e6d80-e325-11eb-9115-3aab0c542df2.png">
+![event1](https://user-images.githubusercontent.com/86943781/126898598-4e0e4259-d7ea-4340-bd12-cca5da5087e7.png)
+
 
 ### 이벤트 도출-부적격삭제
-<img width="994" alt="image" src="https://user-images.githubusercontent.com/85722729/125240558-3c4e6d80-e325-11eb-9fb7-7e4ee3403089.png">
+![event2](https://user-images.githubusercontent.com/86943781/126898617-d1a0da2d-4cc4-47df-847c-4d68fc0a7606.png)
+
 
 ### 액터, 커맨드 부착하여 읽기 좋게
 <img width="994" alt="image" src="https://user-images.githubusercontent.com/85722729/125240560-3ce70400-e325-11eb-826d-8c16ca723bc4.png">
