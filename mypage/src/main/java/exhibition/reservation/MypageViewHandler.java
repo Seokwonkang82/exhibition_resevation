@@ -30,7 +30,7 @@ public class MypageViewHandler {
             mypage.setExhibitionId(reservationCreated.getExhibitionId());
             mypage.setExhibitionName(reservationCreated.getExhibitionName());
             mypage.setExhibitionStatus(reservationCreated.getExhibitionStatus());
-            mypage.setExhibitionType(reservationCreated.getExhibitionDate());
+            mypage.setExhibitionDate(reservationCreated.getExhibitionDate());
             mypage.setExhibitionType(reservationCreated.getExhibitionType());
             mypage.setId(reservationCreated.getId());
             // view 레파지 토리에 save
