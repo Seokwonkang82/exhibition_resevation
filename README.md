@@ -83,8 +83,8 @@
 - View Model 추가
 - 도메인 서열
   - Core : reservation
-  - Supporting : resort, mypage
-  - General : payment, voucher
+  - Supporting : exhibition, mypage
+  - General : voucher
 
 ## 헥사고날 아키텍처 다이어그램 도출
 
