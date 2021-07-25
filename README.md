@@ -1,4 +1,3 @@
-![hexa](https://user-images.githubusercontent.com/86943781/126889395-974f9bdb-0eec-43c0-8a29-a2f060379f58.png)
 
 # 전시회_예약시스템
 ![gallary](https://user-images.githubusercontent.com/86943781/126889014-7a965a01-9d65-4070-95f0-790d9afe4f52.png)
