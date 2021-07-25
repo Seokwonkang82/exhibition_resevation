@@ -288,17 +288,10 @@ server:
 - 전시서비스를 호출하기 위하여 Stub과 (FeignClient) 를 이용하여 Service 대행 인터페이스 (Proxy) 를 구현 
 
 ```java
-# (reservation) ResortService.java
+# (reservation) ExhibitionService.java
 
-package resortreservation.external;
+![image](https://user-images.githubusercontent.com/86943781/126901336-264287be-0eed-4c2b-9610-5a853cc1a8d3.png)
 
-@FeignClient(name="resort", url="${feign.resort.url}")
-public interface ResortService {
-    
-    @RequestMapping(method= RequestMethod.GET, value="/resorts/{id}", consumes = "application/json")
-    public Resort getResortStatus(@PathVariable("id") Long id);
-
-}
 ```
 
 - 예약을 처리 하기 직전(@PrePersist)에 ResortSevice를 호출하여 서비스 상태와 Resort 세부정보도 가져온다.
