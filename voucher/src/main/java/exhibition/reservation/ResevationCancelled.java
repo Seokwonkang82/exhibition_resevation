@@ -1,15 +1,14 @@
-
 package exhibition.reservation;
 
 public class ResevationCancelled extends AbstractEvent {
 
     private Long id;
-    private Long Exhibition id;
-    private String Exhibition Name;
-    private String Exhibition Status;
-    private String Exhibition Date;
-    private String Exhibition Type;
-    private String Member Name;
+    private Long exhibitionid;
+    private String exhibitionName;
+    private String exhibitionStatus;
+    private String exhibitionDate;
+    private String exhibitionType;
+    private String memberName;
 
     public Long getId() {
         return id;
@@ -19,46 +18,45 @@ public class ResevationCancelled extends AbstractEvent {
         this.id = id;
     }
     public Long getExhibitionId() {
-        return Exhibition id;
+        return exhibitionid;
     }
 
-    public void setExhibitionId(Long Exhibition id) {
-        this.Exhibition id = Exhibition id;
+    public void setExhibitionId(Long exhibitionid) {
+        this.exhibitionid = exhibitionid;
     }
     public String getExhibitionName() {
-        return Exhibition Name;
+        return exhibitionName;
     }
 
-    public void setExhibitionName(String Exhibition Name) {
-        this.Exhibition Name = Exhibition Name;
+    public void setExhibitionName(String exhibitionName) {
+        this.exhibitionName = exhibitionName;
     }
     public String getExhibitionStatus() {
-        return Exhibition Status;
+        return exhibitionStatus;
     }
 
-    public void setExhibitionStatus(String Exhibition Status) {
-        this.Exhibition Status = Exhibition Status;
+    public void setExhibitionStatus(String exhibitionStatus) {
+        this.exhibitionStatus = exhibitionStatus;
     }
     public String getExhibitionDate() {
-        return Exhibition Date;
+        return exhibitionDate;
     }
 
-    public void setExhibitionDate(String Exhibition Date) {
-        this.Exhibition Date = Exhibition Date;
+    public void setExhibitionDate(String exhibitionDate) {
+        this.exhibitionDate = exhibitionDate;
     }
     public String getExhibitionType() {
-        return Exhibition Type;
+        return exhibitionType;
     }
 
-    public void setExhibitionType(String Exhibition Type) {
-        this.Exhibition Type = Exhibition Type;
+    public void setExhibitionType(String exhibitionType) {
+        this.exhibitionType = exhibitionType;
     }
-    public String getMemberNam() {
-        return Member Name;
+    public String getMemberName() {
+        return memberName;
     }
 
-    public void setMemberNam(String Member Name) {
-        this.Member Name = Member Name;
+    public void setMemberName(String memberName) {
+        this.memberName = memberName;
     }
-}
-
+} 
