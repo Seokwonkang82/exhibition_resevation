@@ -79,7 +79,8 @@
 <img width="994" alt="image" src="https://user-images.githubusercontent.com/85722729/125240556-3bb5d700-e325-11eb-9bcf-d9c4d4d08e32.png">
 
 ### 완성된 모형
-![diagram](https://user-images.githubusercontent.com/86943781/126889652-697ee4da-279d-4ab4-bddf-f15ffe3094f1.png)
+![diagram](https://user-images.githubusercontent.com/86943781/126889711-cd147434-1962-45d5-8e66-5405d281fb88.png)
+
 
 
 - View Model 추가
