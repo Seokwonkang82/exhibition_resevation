@@ -26,7 +26,7 @@ public class MypageViewHandler {
             // view 객체 생성
             Mypage mypage = new Mypage();
             // view 객체에 이벤트의 Value 를 set 함
-            mypage.setMemberName(reservationCreated.getExhibitionName());
+            mypage.setMemberName(reservationCreated.getMemberName());
             mypage.setExhibitionId(reservationCreated.getExhibitionId());
             mypage.setExhibitionName(reservationCreated.getExhibitionName());
             mypage.setExhibitionStatus(reservationCreated.getExhibitionStatus());
