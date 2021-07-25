@@ -290,10 +290,13 @@ server:
 ```java
 # (reservation) ExhibitionService.java
 
-![exhibitionservice](https://user-images.githubusercontent.com/86943781/126901398-4f936861-5bd6-45ff-872d-c2fdd77f766a.png)
+
 
 
 ```
+
+![exhibitionservice](https://user-images.githubusercontent.com/86943781/126901422-51d02f4c-d2d4-4e9d-b0d0-39c86ada2eed.png)
+
 
 - 예약을 처리 하기 직전(@PrePersist)에 ResortSevice를 호출하여 서비스 상태와 Resort 세부정보도 가져온다.
 ```java
