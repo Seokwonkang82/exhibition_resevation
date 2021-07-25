@@ -1,10 +1,9 @@
-# exhibition_resevation
 
 # 전시회_예약시스템
 ![gallary](https://user-images.githubusercontent.com/86943781/126889014-7a965a01-9d65-4070-95f0-790d9afe4f52.png)
 
 # Table of contents
-- [휴양소_예약시스템](#---)
+- [전시회_예약시스템](#---)
   - [서비스 시나리오](#서비스-시나리오)
   - [체크포인트](#체크포인트)
   - [분석/설계](#분석설계)
