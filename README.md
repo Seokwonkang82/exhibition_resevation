@@ -63,20 +63,13 @@
 ![event2](https://user-images.githubusercontent.com/86943781/126898617-d1a0da2d-4cc4-47df-847c-4d68fc0a7606.png)
 
 
-### 액터, 커맨드 부착하여 읽기 좋게
+### 액터, 커맨드, 폴리시 부착
 ![event3](https://user-images.githubusercontent.com/86943781/126898889-aa08ee11-f0cd-42d4-93a0-d15be898db4c.png)
 
 
-### 어그리게잇으로 묶기
+### 어그리게잇과 바운디드 컨텍스트로 묶기
 ![event4](https://user-images.githubusercontent.com/86943781/126898894-8ab1b66b-89de-4e66-b1b8-3d3323d36440.png)
 
-
-### 바운디드 컨텍스트로 묶기
-<img width="994" alt="image" src="https://user-images.githubusercontent.com/85722729/125240566-3d7f9a80-e325-11eb-9602-65894469d7e8.png">
-
-### 폴리시 부착 (괄호는 수행주체, 폴리시 부착을 둘째단계에서 해놔도 상관 없음. 전체 연계가 초기에 드러남)
-
-<img width="994" alt="image" src="https://user-images.githubusercontent.com/85722729/125240549-3a84aa00-e325-11eb-96e1-7019c68498ae.png">
 
 ### 폴리시의 이동과 컨텍스트 매핑 (점선은 Pub/Sub, 실선은 Req/Resp)
 
