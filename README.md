@@ -77,7 +77,8 @@
 
 
 ### 완성된 모형
-![diagram](https://user-images.githubusercontent.com/86943781/126889711-cd147434-1962-45d5-8e66-5405d281fb88.png)
+![diagram](https://user-images.githubusercontent.com/86943781/126899261-0ecb33b1-7017-4cbc-b17f-18816a67781c.png)
+
 
 
 
