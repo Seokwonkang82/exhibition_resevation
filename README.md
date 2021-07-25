@@ -290,7 +290,8 @@ server:
 ```java
 # (reservation) ExhibitionService.java
 
-![image](https://user-images.githubusercontent.com/86943781/126901336-264287be-0eed-4c2b-9610-5a853cc1a8d3.png)
+![exhibitionservice](https://user-images.githubusercontent.com/86943781/126901398-4f936861-5bd6-45ff-872d-c2fdd77f766a.png)
+
 
 ```
 
