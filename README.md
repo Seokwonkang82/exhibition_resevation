@@ -456,38 +456,13 @@ kubectl apply -f resort/kubernetes/service.yaml.  #AWS service 등록
 
 * 서킷 브레이크 프레임워크 : Spring FeignClient + Hystrix 옵션을 사용
 
-- 시나리오 : 예약(reservation) -> 휴양소(resort) 예약 시 RESTful Request/Response 로 구현이 하였고, 예약 요청이 과도할 경우 circuit breaker 를 통하여 장애격리.
+- 시나리오 : 예약(reservation) -> 전시(exhibition) 예약 시 Request/Response 로 구현이 하였고, 예약 요청이 과도할 경우 circuit breaker 를 통하여 장애격리.
 - Hystrix 설정: 요청처리 쓰레드에서 처리시간이 610 밀리초가 넘어서기 시작하여 어느정도 유지되면 circuit breaker 수행됨
-
-```
-# application.yml
-feign:
-  hystrix:
-    enabled: true
-    
-hystrix:
-  command:
-    # 전역설정
-    default:
-      execution.isolation.thread.timeoutInMilliseconds: 610
-
-```
+  ![hystix 선언](https://user-images.githubusercontent.com/86943781/126892940-fdb18554-e07a-4d97-b3c6-ec01d90162f3.png)
 
 - 피호출 서비스(휴양소:resort) 의 임의 부하 처리 - 400 밀리초 ~ 620밀리초의 지연시간 부여
-```
-# (resort) ResortController.java 
+  ![delay](https://user-images.githubusercontent.com/86943781/126892958-6000010b-3f36-4351-abe6-ec5ceb4b45f8.png)
 
-    @RequestMapping(method= RequestMethod.GET, value="/resorts/{id}")
-        public Resort getResortStatus(@PathVariable("id") Long id){
-
-            //hystix test code
-             try {
-                 Thread.currentThread().sleep((long) (400 + Math.random() * 220));
-             } catch (InterruptedException e) { }
-
-            return repository.findById(id).get();
-        }
-```
 
 * 부하테스터 siege 툴을 통한 서킷 브레이커 동작 확인:
 - 동시사용자 100명
