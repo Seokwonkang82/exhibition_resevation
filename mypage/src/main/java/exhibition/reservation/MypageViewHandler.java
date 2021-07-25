@@ -32,7 +32,7 @@ public class MypageViewHandler {
             mypage.setExhibitionStatus(reservationCreated.getExhibitionStatus());
             mypage.setExhibitionDate(reservationCreated.getExhibitionDate());
             mypage.setExhibitionType(reservationCreated.getExhibitionType());
-            mypage.setId(reservationCreated.getId());
+            mypage.setReservationId(reservationCreated.getId());
             // view 레파지 토리에 save
             mypageRepository.save(mypage);
 
@@ -47,21 +47,26 @@ public class MypageViewHandler {
         try {
             if (!resevationCancelled.validate()) return;
                 // view 객체 조회
-            Optional<Mypage> mypageOptional = mypageRepository.findById(resevationCancelled.getId());
+ //           Optional<Mypage> mypageOptional = mypageRepository.findByReservationId(resevationCancelled.getId());
 
-            if( mypageOptional.isPresent()) {
-                 Mypage mypage = mypageOptional.get();
-            // view 객체에 이벤트의 eventDirectValue 를 set 함
-                 mypage.setExhibitionStatus(resevationCancelled.getExhibitionStatus());
+ //           if( mypageOptional.isPresent()) {
+ //                Mypage mypage = mypageOptional.get();
+ //           // view 객체에 이벤트의 eventDirectValue 를 set 함
+ //                mypage.setExhibitionStatus(resevationCancelled.getExhibitionStatus());
+ //               // view 레파지 토리에 save
+ //                mypageRepository.save(mypage);
+                
+              List<Mypage> mypageList = mypageRepository.findByReservationId(resevationCancelled.getId());
+                 for(Mypage mypage : mypageList){
+                    // view 객체에 이벤트의 eventDirectValue 를 set 함
+                mypage.setExhibitionStatus(resevationCancelled.getExhibitionStatus());
                 // view 레파지 토리에 save
-                 mypageRepository.save(mypage);
-                }
-
-
+                  mypageRepository.save(mypage);    
+                 }
+  
         }catch (Exception e){
             e.printStackTrace();
         }
     }
 
 }
-
