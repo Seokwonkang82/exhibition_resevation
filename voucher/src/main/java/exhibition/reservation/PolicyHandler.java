@@ -24,6 +24,10 @@ public class PolicyHandler{
         // Sample Logic //
         // Voucher voucher = new Voucher();
         // voucherRepository.save(voucher);
+         Voucher voucher = new Voucher();
+         voucher.setReservationId(reservationCreated.getId());     
+         voucher.setVoucherStatus(reservationCreated.getExhibitionStatus());  
+         voucherRepository.save(voucher);
 
     }
     @StreamListener(KafkaProcessor.INPUT)
