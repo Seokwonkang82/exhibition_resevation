@@ -42,6 +42,10 @@ public class PolicyHandler{
         // Sample Logic //
         // Voucher voucher = new Voucher();
         // voucherRepository.save(voucher);
+         Voucher voucher = new Voucher();
+         voucher.setReservationId(resevationCancelled.getId());     
+         voucher.setVoucherStatus(resevationCancelled.getExhibitionStatus());  
+         voucherRepository.save(voucher);
 
     }
 
