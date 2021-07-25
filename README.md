@@ -1,7 +1,8 @@
 # exhibition_resevation
 
-# 휴양소_예약시스템
+# 전시회_예약시스템
 ![image](https://user-images.githubusercontent.com/85722729/124409014-75656b80-dd82-11eb-9a56-672bc90270ad.jpg)
+![gallary](https://user-images.githubusercontent.com/86943781/126889014-7a965a01-9d65-4070-95f0-790d9afe4f52.png)
 
 # Table of contents
 - [휴양소_예약시스템](#---)
