@@ -259,23 +259,6 @@ public class Reservation {
 
 ![policy](https://user-images.githubusercontent.com/86943781/126968039-6f0edf5f-a455-4c08-a1be-8a850253639e.png)
 
-
-결제시스템(팀과제에서는 미구현)
-```java
-
-@Service
-public class PolicyHandler{
-    @Autowired PaymentRepository paymentRepository;
-
-    @StreamListener(KafkaProcessor.INPUT)
-    public void wheneverReservationRegistered_PaymentRequestPolicy(@Payload ReservationRegistered reservationRegistered){
-
-        if(!reservationRegistered.validate()) return;
-        System.out.println("\n\n##### listener PaymentRequestPolicy : " + reservationRegistered.toJson() + "\n\n");
-        // Logic 구성 // 
-    }
-}
-```
 마이페이지시스템
 ```java
 @Service
@@ -310,6 +293,9 @@ public class MyPageViewHandler {
     }
 }
 ```
+![mypaghandler](https://user-images.githubusercontent.com/86943781/126968324-19a66fae-fd3d-4b9c-8bd4-219c566ce6af.png)
+
+
 - 예약 시스템은 결제시스템/마이페이지 시스템과 완전히 분리되어있으며, 이벤트 수신에 따라 처리되기 때문에, 결제시스템/마이시스템이 유지보수로 인해 잠시 내려간 상태라도 예야을 받는데 문제가 없다:
 ```bash
 # 마이페이지 서비스는 잠시 셧다운 시키고 결제시스템은 현재 미구현
