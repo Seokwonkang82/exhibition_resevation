@@ -105,7 +105,7 @@
 분석/설계 단계에서 도출된 헥사고날 아키텍처에 따라, 각 BC별로 대변되는 마이크로 서비스들을 스프링부트로 구현하였다. 구현한 각 서비스를 로컬에서 실행하는 방법은 아래와 같다 (각자의 포트넘버는 8081 ~ 808n 이다)
 
 ## 시나리오에 따른 처리
-1. 휴양소 관리자는 휴양소를 등록한다.
+1. 전시회 관리자는 전시회를 등록한다.
 ```sh
 http a349aca93201b443cb8931e6193e56cb-252808345.ap-northeast-2.elb.amazonaws.com:8080/exhibitions exhibitionName="Monet" exhibitionDate="20210725" exhibitionStatus="Available" exhibitionType="gallary"
 http a349aca93201b443cb8931e6193e56cb-252808345.ap-northeast-2.elb.amazonaws.com:8080/exhibitions exhibitionName="Picasso" exhibitionDate="20210812" exhibitionStatus="Available" exhibitionType="gallary"
