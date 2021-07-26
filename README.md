@@ -107,11 +107,13 @@
 ## 시나리오에 따른 처리
 1. 휴양소 관리자는 휴양소를 등록한다.
 ```sh
-http aa9c6a809425d45b69b139edc5237d53-1942883713.ap-northeast-2.elb.amazonaws.com:8080/resorts resortName="Jeju" resortType="Hotel" resortPrice=100000 resortStatus="Available" resortPeriod="7/23~25"
-http aa9c6a809425d45b69b139edc5237d53-1942883713.ap-northeast-2.elb.amazonaws.com:8080/resorts resortName="Seoul" resortType="Hotel" resortPrice=100000 resortStatus="Available" resortPeriod="7/23~25"
-http aa9c6a809425d45b69b139edc5237d53-1942883713.ap-northeast-2.elb.amazonaws.com:8080/resorts
+http a349aca93201b443cb8931e6193e56cb-252808345.ap-northeast-2.elb.amazonaws.com:8080/exhibitions exhibitionName="Monet" exhibitionDate="20210725" exhibitionStatus="Available" exhibitionType="gallary"
+http a349aca93201b443cb8931e6193e56cb-252808345.ap-northeast-2.elb.amazonaws.com:8080/exhibitions exhibitionName="Picasso" exhibitionDate="20210812" exhibitionStatus="Available" exhibitionType="gallary"
+http a349aca93201b443cb8931e6193e56cb-252808345.ap-northeast-2.elb.amazonaws.com:8080/exhibitions
 ```
 <img width="992" alt="image" src="https://user-images.githubusercontent.com/85722851/125231090-1620d180-e315-11eb-9300-1beefa54e09c.png">
+![exhibition1](https://user-images.githubusercontent.com/86943781/126931534-ccb33872-1b57-4799-a309-ab2e0c25e099.png)
+
 
 2. 고객이 휴양소를 선택하여 예약한다.
 ```sh
