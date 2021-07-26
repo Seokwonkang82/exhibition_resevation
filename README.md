@@ -256,22 +256,11 @@ server:
 ``` 
 ## 폴리글랏 퍼시스턴스
 - CQRS 를 위한 mypage 서비스만 DB를 구분하여 적용함. 인메모리 DB인 hsqldb 사용.
-```
-- maypage 서비스의 pom.xml
-<!-- 
-    <dependency>
-        <groupId>com.h2database</groupId>
-        <artifactId>h2</artifactId>
-        <scope>runtime</scope>
-    </dependency>
--->
-    <dependency>
-        <groupId>org.hsqldb</groupId>
-        <artifactId>hsqldb</artifactId>
-        <version>2.4.0</version>
-        <scope>runtime</scope>
-    </dependency>
-```
+
+![cqrs](https://user-images.githubusercontent.com/86943781/126961701-45f76291-5d74-47d5-a58d-26338f44c24c.png)
+
+
+
 ## CQRS & Kafka
 - 타 마이크로서비스의 데이터 원본에 접근없이 내 서비스의 화면 구성과 잦은 조회가 가능하게 mypage에 CQRS 구현하였다.
 - 모든 정보는 비동기 방식으로 발행된 이벤트(예약, 예약취소, 가능상태변경)를 수신하여 처리된다.
