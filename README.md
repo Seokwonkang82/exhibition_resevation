@@ -273,7 +273,7 @@ http aab08da4631a24878a5de445cefc53cc-516544677.ap-northeast-2.elb.amazonaws.com
 각 구현체들은 각자의 source repository 에 구성되었고, 각 서비스별로 Docker로 빌드를 하여, Docker Hub에 등록 후 deployment.yaml, service.yml을 통해 EKS에 배포함.
 - git에서 소스 가져오기
 ```bash
-git clone https://github.com/simair77/resort_reservation.git
+git clone https://github.com/Seokwonkang82/exhibition_resevation.git
 ```
 - 각서비스별 packege, build, github push 실행
 ```bash
