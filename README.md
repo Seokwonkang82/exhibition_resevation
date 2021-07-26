@@ -198,7 +198,7 @@ http aab08da4631a24878a5de445cefc53cc-516544677.ap-northeast-2.elb.amazonaws.com
 
 ![mypages](https://user-images.githubusercontent.com/86943781/126962523-897fc5e1-8050-4c1e-a59b-56b763b039eb.png)
 
-
+Kafka 메세지
 
 ![image](https://user-images.githubusercontent.com/86943781/126986433-04f7d8d3-8b4c-4191-9d8b-4364fa7e1ac8.png)
 
