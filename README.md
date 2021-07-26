@@ -122,11 +122,22 @@ http aab08da4631a24878a5de445cefc53cc-516544677.ap-northeast-2.elb.amazonaws.com
 ![예약](https://user-images.githubusercontent.com/86943781/126958496-c71f423e-e165-4911-82bb-798f60cfaa54.png)
 
 
-4. 예약이 확정되면 바우처가 활성화 된다
+3. 예약이 확정되면 바우처가 활성화 된다
 ```sh
 http aab08da4631a24878a5de445cefc53cc-516544677.ap-northeast-2.elb.amazonaws.com:8080/vouchers
 ```
 ![vouchercre](https://user-images.githubusercontent.com/86943781/126958697-f9d6a033-fdd3-441f-9641-a8317445b279.png)
+
+4. 고객이 삭제된 전시회를 예약할 경우, 예약이 불가능하다.
+```sh
+http aab08da4631a24878a5de445cefc53cc-516544677.ap-northeast-2.elb.amazonaws.com:8080/exhibitions
+```
+![cancelledex](https://user-images.githubusercontent.com/86943781/126960239-1a3f7552-d566-4ca8-803c-74ef5860ccad.png)
+
+```sh
+http aab08da4631a24878a5de445cefc53cc-516544677.ap-northeast-2.elb.amazonaws.com:8080/reservations exhibitionId=3 memberName="seokwon"
+```
+![fail](https://user-images.githubusercontent.com/86943781/126960492-9a1b29d9-a62d-465f-8237-f51c01f61d98.png)
 
 
 4. 고객이 확정된 예약을 취소할 수 있다.
