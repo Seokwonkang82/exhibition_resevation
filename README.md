@@ -210,8 +210,7 @@ http aab08da4631a24878a5de445cefc53cc-516544677.ap-northeast-2.elb.amazonaws.com
 ```java
 # (reservation) ExhibitionService.java
 ```
-
-![exhibitionservice](https://user-images.githubusercontent.com/86943781/126901422-51d02f4c-d2d4-4e9d-b0d0-39c86ada2eed.png)
+![sync](https://user-images.githubusercontent.com/86943781/126963457-afe88f47-3420-4641-8c69-2888b1c87565.png)
 
 - 예약을 처리 하기 직전(@PrePersist)에 ResortSevice를 호출하여 서비스 상태와 Exhibition 세부정보도 가져온다.
  
