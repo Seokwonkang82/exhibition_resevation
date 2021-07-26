@@ -22,8 +22,8 @@
     - [CI/CD 설정](#cicd설정)
     - [동기식 호출 / 서킷 브레이킹 / 장애격리](#동기식-호출-서킷-브레이킹-장애격리)
     - [오토스케일 아웃](#오토스케일-아웃)
-    - [Zero-Downtime deployd](#Zero-Downtime-deploy(Readiness-Probe)
-    - [Self-healing(Liveness-Probe)](#Self-healing(Liveness-Probe))
+    - [Zero-Downtime deployd(Readiness-Probe)](#Zero-Downtime-deploy(Readiness-Probe))
+    - [Self-healing(Liveness Probe)](#Self-healing(Liveness-Probe))
     - [ConfigMap 사용](#ConfigMap-시용)
 
 
