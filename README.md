@@ -359,19 +359,12 @@ kubectl apply -f exhibition/kubernetes/deployment.yml
 배포기간중 Availability 가 평소 100%에서 89% 대로 떨어지는 것을 확인. 원인은 쿠버네티스가 성급하게 새로 올려진 서비스를 READY 상태로 인식하여 서비스 유입을 진행한 것이기 때문. 
 
 - 이를 막기위해 Readiness Probe 를 설정함: deployment.yaml 의 readiness probe 추가
-```yml
-          readinessProbe:
-            httpGet:
-              path: '/actuator/health'
-              port: 8080
-            initialDelaySeconds: 10
-            timeoutSeconds: 2
-            periodSeconds: 5
-            failureThreshold: 10
-```
+
+![read2](https://user-images.githubusercontent.com/86943781/127012927-7fc39ece-5a93-417e-8605-6b6b6f1d22a1.png)
 
 - 동일한 시나리오로 재배포 한 후 Availability 확인
-<img width="503" alt="image" src="https://user-images.githubusercontent.com/85722851/125044747-3cf1c480-e0d7-11eb-9c35-1091547bb099.png">
+![read3](https://user-images.githubusercontent.com/86943781/127013043-e421fe01-b824-4196-8ae4-2b84e4b84cc6.png)
+
 배포기간 동안 Availability 가 100%를 유지하기 때문에 무정지 재배포가 성공한 것으로 확인됨.
 
 ## Self-healing (Liveness Probe)
