@@ -331,19 +331,19 @@ siege -c5 -t10S -v --content-type "application/json" 'http://localhost:8088/rese
 
 
 ## 오토스케일 아웃
-- 앞서 CB 는 시스템을 안정되게 운영할 수 있게 해줬지만 사용자의 요청을 100% 받아들여주지 못했기 때문에 이에 대한 보완책으로 자동화된 확장 기능을 적용하고자 한다. 
-- 리조트서비스에 대한 replica 를 동적으로 늘려주도록 HPA 를 설정한다. 설정은 CPU 사용량이 20프로를 넘어서면 replica 를 10개까지 늘려준다:
+- 전시회서비스에 대한 replica 를 동적으로 늘려주도록 HPA 를 설정한다. 설정은 CPU 사용량이 20프로를 넘어서면 replica 를 3개까지 늘려준다:
 ```bash
-kubectl autoscale deployment resort --cpu-percent=20 --min=1 --max=10
+kubectl autoscale deployment exhibition --cpu-percent=20 --min=1 --max=3
 ```
-- CB 에서 했던 방식대로 워크로드를 100초 동안 걸어준다.
+- CB 에서 했던 방식대로 워크로드를 40초 동안 걸어준다.
 ```bash
-siege -c20 -t100S -v http://resort:8080/resorts 
+siege -c40 -t40S -v http://exhibition:8080/exhibitions  
 ```
-<img width="533" alt="image" src="https://user-images.githubusercontent.com/85722851/125200066-20ef4e00-e2a4-11eb-893e-7407615daa18.png">
+![auto2](https://user-images.githubusercontent.com/86943781/127008289-faba5b8d-5f24-448a-b1e0-9794db782dc6.png)
 
 - 오토스케일이 어떻게 되고 있는지 모니터링을 해보면 어느정도 시간이 흐른 후 스케일 아웃이 벌어지는 것을 확인할 수 있다:
-<img width="704" alt="image" src="https://user-images.githubusercontent.com/85722851/125234907-926ae300-e31c-11eb-8be4-377f595f9a24.png">
+![auto1](https://user-images.githubusercontent.com/86943781/127008336-0c631240-d1c2-43f6-8c4e-a4a99ae3d94a.png)
+
 
 
 ## Zero-Downtime deploy (Readiness Probe)
