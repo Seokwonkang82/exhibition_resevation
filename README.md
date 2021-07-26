@@ -245,39 +245,7 @@ http aab08da4631a24878a5de445cefc53cc-516544677.ap-northeast-2.elb.amazonaws.com
 ![policy](https://user-images.githubusercontent.com/86943781/126968039-6f0edf5f-a455-4c08-a1be-8a850253639e.png)
 
 마이페이지시스템
-```java
-@Service
-public class MyPageViewHandler {
 
-    @Autowired
-    private MyPageRepository myPageRepository;
-
-    @StreamListener(KafkaProcessor.INPUT)
-    public void whenReservationRegistered_then_CREATE_1 (@Payload ReservationRegistered reservationRegistered) {
-        try {
-
-            if (!reservationRegistered.validate()) return;
-
-            // view 객체 생성
-            MyPage myPage = new MyPage();
-            // view 객체에 이벤트의 Value 를 set 함
-            myPage.setId(reservationRegistered.getId());
-            myPage.setMemberName(reservationRegistered.getMemberName());
-            myPage.setResortId(reservationRegistered.getResortId());
-            myPage.setResortName(reservationRegistered.getResortName());
-            myPage.setResortStatus(reservationRegistered.getResortStatus());
-            myPage.setResortType(reservationRegistered.getResortType());
-            myPage.setResortPeriod(reservationRegistered.getResortPeriod());
-            myPage.setResortPrice(reservationRegistered.getResortPrice());
-            // view 레파지 토리에 save
-            myPageRepository.save(myPage);
-        
-        }catch (Exception e){
-            e.printStackTrace();
-        }
-    }
-}
-```
 ![mypaghandler](https://user-images.githubusercontent.com/86943781/126968324-19a66fae-fd3d-4b9c-8bd4-219c566ce6af.png)
 
 
