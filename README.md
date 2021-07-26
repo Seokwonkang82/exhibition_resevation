@@ -394,18 +394,13 @@ kubectl apply -f  kubernetes/deployment.yml
 ## ConfigMap 사용
 - 시스템별로 또는 운영중에 동적으로 변경 가능성이 있는 설정들을 ConfigMap을 사용하여 관리합니다. Application에서 특정 도메일 URL을 ConfigMap 으로 설정하여 운영/개발등 목적에 맞게 변경가능합니다.
 configMap 생성
-```bash
-kubectl apply -f - <<EOF
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: resort-cm
-data:
-    api.resort.url: resort:8080
-EOF
-```
+
+![ex-cm](https://user-images.githubusercontent.com/86943781/126992371-d5b38856-4ddc-4654-9e84-c199a5e3ef3b.png)
+
 configmap 생성 후 조회
-<img width="881" alt="image" src="https://user-images.githubusercontent.com/85722851/125245232-470c0100-e32b-11eb-9db1-54f35d1b2e4c.png">
+
+![configmap](https://user-images.githubusercontent.com/86943781/126992191-f8023da0-f6de-4d60-a3ea-00b941b40815.png)
+
 deployment.yml 변경
 ```yml
       containers:
