@@ -175,85 +175,12 @@ http aab08da4631a24878a5de445cefc53cc-516544677.ap-northeast-2.elb.amazonaws.com
 - API GateWay를 통하여 마이크로 서비스들의 진입점을 통일할 수 있다. 
 다음과 같이 GateWay를 적용하였다.
 
-```yaml
-- gateway 서비스의 application.yml
-
-server:
-  port: 8088
-
----
-
-spring:
-  profiles: default
-  cloud:
-    gateway:
-      routes:
-        - id: exhibition
-          uri: http://localhost:8081
-          predicates:
-            - Path=/exhibitions/** 
-        - id: reservation
-          uri: http://localhost:8082
-          predicates:
-            - Path=/reservations/** 
-        - id: mypage
-          uri: http://localhost:8083
-          predicates:
-            - Path= /mypages/**
-        - id: voucher
-          uri: http://localhost:8084
-          predicates:
-            - Path=/vouchers/** 
-      globalcors:
-        corsConfigurations:
-          '[/**]':
-            allowedOrigins:
-              - "*"
-            allowedMethods:
-              - "*"
-            allowedHeaders:
-              - "*"
-            allowCredentials: true
+![default](https://user-images.githubusercontent.com/86943781/126963201-e2566210-12d9-4fec-a616-75e3545f14e9.png)
 
 
----
+![docker](https://user-images.githubusercontent.com/86943781/126963217-022aa75a-1e37-42c9-aa08-81969f628b63.png)
 
-spring:
-  profiles: docker
-  cloud:
-    gateway:
-      routes:
-        - id: exhibition
-          uri: http://exhibition:8080
-          predicates:
-            - Path=/exhibitions/** 
-        - id: reservation
-          uri: http://reservation:8080
-          predicates:
-            - Path=/reservations/** 
-        - id: mypage
-          uri: http://mypage:8080
-          predicates:
-            - Path= /mypages/**
-        - id: voucher
-          uri: http://voucher:8080
-          predicates:
-            - Path=/vouchers/** 
-      globalcors:
-        corsConfigurations:
-          '[/**]':
-            allowedOrigins:
-              - "*"
-            allowedMethods:
-              - "*"
-            allowedHeaders:
-              - "*"
-            allowCredentials: true
-
-server:
-  port: 8080
-  
-``` 
+ 
 ## 폴리글랏 퍼시스턴스
 - CQRS 를 위한 mypage 서비스만 DB를 구분하여 적용함. 인메모리 DB인 hsqldb 사용.
 
