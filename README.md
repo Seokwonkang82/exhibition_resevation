@@ -114,7 +114,12 @@ http a349aca93201b443cb8931e6193e56cb-252808345.ap-northeast-2.elb.amazonaws.com
 ![exhibition1](https://user-images.githubusercontent.com/86943781/126931572-ffd13acd-bae2-4db6-ab28-f800145f1b44.png)
 
 
-2. 고객은 전시회를 선택하여 예약한다.
+2. 전시회 관리자는 전시회를 삭제할 수 있다.
+```sh
+
+```
+
+3. 고객은 전시회를 선택하여 예약한다.
 ```sh
 http aab08da4631a24878a5de445cefc53cc-516544677.ap-northeast-2.elb.amazonaws.com:8080/reservations exhibitionId=1 memberName="seokwon"
 ```
@@ -122,11 +127,12 @@ http aab08da4631a24878a5de445cefc53cc-516544677.ap-northeast-2.elb.amazonaws.com
 
 
 
-3. 예약이 확정되어 휴양소는 예약불가 상태로 바뀐다.
+4. 예약이 확정되면 바우처가 활성화 된다
 ```sh
-http aa9c6a809425d45b69b139edc5237d53-1942883713.ap-northeast-2.elb.amazonaws.com:8080/resorts/2
+http aab08da4631a24878a5de445cefc53cc-516544677.ap-northeast-2.elb.amazonaws.com:8080/vouchers/1
 ```
-<img width="992" alt="image" src="https://user-images.githubusercontent.com/85722851/125231217-4a948d80-e315-11eb-923d-c257731b5d44.png">
+![voucher1](https://user-images.githubusercontent.com/86943781/126948686-076505c0-7c9d-41fe-b5b8-b2e3db02db48.png)
+
 
 
 4. 고객이 확정된 예약을 취소할 수 있다.
