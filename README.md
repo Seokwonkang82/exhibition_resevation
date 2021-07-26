@@ -118,7 +118,8 @@ http a349aca93201b443cb8931e6193e56cb-252808345.ap-northeast-2.elb.amazonaws.com
 ```sh
 http aab08da4631a24878a5de445cefc53cc-516544677.ap-northeast-2.elb.amazonaws.com:8080/reservations exhibitionId=1 memberName="seokwon"
 ```
-<img width="993" alt="image" src="https://user-images.githubusercontent.com/85722851/125231135-2769de00-e315-11eb-8b6e-f0e4711c2760.png">
+![reservation0726](https://user-images.githubusercontent.com/86943781/126941541-09645c57-1532-41d9-8652-7808b56ed241.png)
+
 
 
 3. 예약이 확정되어 휴양소는 예약불가 상태로 바뀐다.
