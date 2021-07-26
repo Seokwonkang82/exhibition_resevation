@@ -8,7 +8,7 @@
   - [체크포인트](#체크포인트)
   - [분석/설계](#분석설계)
     - [AS-IS조직(Horizontally-Aligned)](#AS-IS-조직-(Horizontally-Aligned))
-    - [TO-BE조직(Verticaaly-Aligned)](#TO-BE 조직 (Vertically-Aligned))
+    - [TO-BE조직(Verticaaly-Aligned)](#TO-BE-조직-(Vertically-Aligned))
   - [구현:](#구현-)
     - [DDD 의 적용](#ddd-의-적용)
     - [폴리글랏 퍼시스턴스](#폴리글랏-퍼시스턴스)
