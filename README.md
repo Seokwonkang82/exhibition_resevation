@@ -423,8 +423,7 @@ kubectl apply -f resort/kubernetes/service.yaml.  #AWS service 등록
 
 ```
 - Docker Hub Image
-<img width="953" alt="image" src="https://user-images.githubusercontent.com/85722851/125232400-80d30c80-e317-11eb-846c-cbd5b0ded2ba.png">
-![dockerimage](https://user-images.githubusercontent.com/86943781/126926296-9d04d429-ad53-4088-a142-a4f96ff96fe0.png)
+![dockerimage](https://user-images.githubusercontent.com/86943781/126926356-44821b33-23bc-4e28-ad72-bb765589a3f3.png)
 
 
 
