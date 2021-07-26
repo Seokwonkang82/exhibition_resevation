@@ -237,22 +237,8 @@ http aab08da4631a24878a5de445cefc53cc-516544677.ap-northeast-2.elb.amazonaws.com
 - 이를 위하여 예약기록을 남긴 후에 곧바로 예약완료가 되었다는 도메인 이벤트를 카프카로 송출한다(Publish)
 - 예약이 생성된 후에 바우처와 마이페이지 시스템에 이력을 보내는 작업은 비 동기식으로 처리하여 예약이 블락 되지 않도록 처리 한다.
 
- 
-```java
-@Entity
-@Table(name="Reservation_table")
-public class Reservation {
- ...
-    @PostPersist
-    public void onPostPersist() throws Exception {
-        ...
-        ReservationRegistered reservationRegistered = new ReservationRegistered();
-        BeanUtils.copyProperties(this, reservationRegistered);
-        reservationRegistered.publishAfterCommit();
-    }
-}
-```
-![ansync](https://user-images.githubusercontent.com/86943781/126967728-4043f90a-3658-4708-9d3e-faaca1d9fe86.png)
+![ansync3](https://user-images.githubusercontent.com/86943781/126984470-c06d6058-e765-458f-8688-3a5d7b4cac88.png)
+
 
 - 바우처시스템과 마이페이지시스템에서는 예약완료 이벤트에 대해서 이를 수신하여 자신의 정책을 처리하도록 PolicyHandler 를 구현한다
 
