@@ -259,24 +259,14 @@ server:
 
 ![cqrs](https://user-images.githubusercontent.com/86943781/126961701-45f76291-5d74-47d5-a58d-26338f44c24c.png)
 
-
-
-## CQRS & Kafka
 - 타 마이크로서비스의 데이터 원본에 접근없이 내 서비스의 화면 구성과 잦은 조회가 가능하게 mypage에 CQRS 구현하였다.
-- 모든 정보는 비동기 방식으로 발행된 이벤트(예약, 예약취소, 가능상태변경)를 수신하여 처리된다.
+- 모든 정보는 비동기 방식으로 발행된 이벤트(예약, 예약취소)를 수신하여 처리된다.
 
 예약 실행
 
 <img width="993" alt="image" src="https://user-images.githubusercontent.com/85722851/125231135-2769de00-e315-11eb-8b6e-f0e4711c2760.png">
 
-카프카 메시지
-<img width="962" alt="image" src="https://user-images.githubusercontent.com/85722851/125224363-73625600-e308-11eb-9cd2-2dfccf0aa78f.png">
-```bash
-{"eventType":"ReservationRegistered","timestamp":"20210712022656","id":1,"resortId":2,"resortName":"Seoul","resortStatus":"Confirmed","resortType":"Hotel","resortPeriod":"7/23~25","resortPrice":100000.0,"memberName":"sim sang joon"}
-{"eventType":"ResortStatusChanged","timestamp":"20210712022656","id":2,"resortName":"Seoul","resortStatus":"Not Available","resortType":"Hotel","resortPeriod":"7/23~25","resortPrice":100000.0}
-{"eventType":"ReservationCanceled","timestamp":"20210712022719","id":1,"resortId":2,"resortName":"Seoul","resortStatus":"Cancelled","resortType":"Hotel","resortPeriod":"7/23~25","resortPrice":100000.0,"memberName":"sim sang joon"}
-{"eventType":"ResortStatusChanged","timestamp":"20210712022719","id":2,"resortName":"Seoul","resortStatus":"Available","resortType":"Hotel","resortPeriod":"7/23~25","resortPrice":100000.0}
-```
+
 
 예약/예약취소 후 mypage 화면
 
