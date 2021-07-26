@@ -184,7 +184,7 @@ http aab08da4631a24878a5de445cefc53cc-516544677.ap-northeast-2.elb.amazonaws.com
 
 ![cqrs](https://user-images.githubusercontent.com/86943781/126961701-45f76291-5d74-47d5-a58d-26338f44c24c.png)
 
-## CQRS&Kafka
+## CQRS & Kafka
 
 - 타 마이크로서비스의 데이터 원본에 접근없이 내 서비스의 화면 구성과 잦은 조회가 가능하게 mypage에 CQRS 구현하였다.
 - 모든 정보는 비동기 방식으로 발행된 이벤트(예약, 예약취소)를 수신하여 처리된다.
