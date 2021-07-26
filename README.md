@@ -278,7 +278,7 @@ git clone https://github.com/Seokwonkang82/exhibition_resevation.git
 - 각서비스별 packege, build, github push 실행
 ```bash
 
-#서비스(exhibition, reservation, voucher, mypage, gatwway)별 처리
+#서비스(exhibition, reservation, voucher, mypage, gateway)별 처리
 mvn package -B -Dmaven.test.skip=true #패키지
 
 docker build -t iamsukwon82/exhibition:v1 . #docker build
