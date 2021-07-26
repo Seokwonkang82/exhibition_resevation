@@ -345,11 +345,10 @@ kubectl apply -f resort/kubernetes/service.yaml.  #AWS service 등록
 ![dockerimage](https://user-images.githubusercontent.com/86943781/126926356-44821b33-23bc-4e28-ad72-bb765589a3f3.png)
 
 
-
 - 최종 Deploy완료
-<img width="895" alt="image" src="https://user-images.githubusercontent.com/85722851/125232490-b4ae3200-e317-11eb-998c-88e5833866c7.png">
 
-![deploy](https://user-images.githubusercontent.com/86943781/126927286-a0a959f8-505d-4a97-afaf-bc11739c8099.png)
+![getall](https://user-images.githubusercontent.com/86943781/126964319-9e202411-94d5-433c-8498-2924eae6e2a6.png)
+
 
 
 ## 동기식 호출 / 서킷 브레이킹 / 장애격리
