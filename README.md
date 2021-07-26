@@ -313,12 +313,6 @@ http aab08da4631a24878a5de445cefc53cc-516544677.ap-northeast-2.elb.amazonaws.com
 4.마이페이지확인
 ![mypages4](https://user-images.githubusercontent.com/86943781/126970204-41522643-e01d-4d21-b64c-2943e6db1c93.png)
 
-
-
-![image](https://user-images.githubusercontent.com/86943781/126969149-92361bcd-a1bf-4c83-a914-c0b6f21f8857.png)
-
-
-
 # 운영
 
 ## CI/CD 설정
