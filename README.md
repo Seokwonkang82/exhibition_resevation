@@ -221,7 +221,6 @@ http aab08da4631a24878a5de445cefc53cc-516544677.ap-northeast-2.elb.amazonaws.com
 ![reservation](https://user-images.githubusercontent.com/86943781/126901556-35cba206-e16c-44e1-a8cf-a94cf6baef5e.png)
 
 
-- 동기식 호출에서는 호출 시간에 따른 타임 커플링이 발생하며, 시스템이 장애로 예약을 못받는다는 것을 확인
 - 동기식 호출에서 호출 받는 서비스에 문제가 생길 경우, 시스템 장애가 전파되는 것을 확인
 
 
