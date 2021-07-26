@@ -264,13 +264,14 @@ server:
 
 예약 실행
 
-<img width="993" alt="image" src="https://user-images.githubusercontent.com/85722851/125231135-2769de00-e315-11eb-8b6e-f0e4711c2760.png">
+![mypage2](https://user-images.githubusercontent.com/86943781/126962455-dcfb837d-0488-4279-bd03-b18c28c20491.png)
 
 
 
 예약/예약취소 후 mypage 화면
 
-<img width="992" alt="image" src="https://user-images.githubusercontent.com/85722851/125231312-7c0d5900-e315-11eb-93bf-af4f025fc3d3.png">
+![mypages](https://user-images.githubusercontent.com/86943781/126962523-897fc5e1-8050-4c1e-a59b-56b763b039eb.png)
+
 
 
 ## 동기식 호출 과 Fallback 처리
