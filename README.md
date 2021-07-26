@@ -116,7 +116,7 @@ http a349aca93201b443cb8931e6193e56cb-252808345.ap-northeast-2.elb.amazonaws.com
 
 2. 고객은 전시회를 선택하여 예약한다.
 ```sh
-http a349aca93201b443cb8931e6193e56cb-252808345.ap-northeast-2.elb.amazonaws.com:8080/reservations exhibitionId=2 memberName="seokwon"
+http aab08da4631a24878a5de445cefc53cc-516544677.ap-northeast-2.elb.amazonaws.com:8080/reservations exhibitionId=1 memberName="seokwon"
 ```
 <img width="993" alt="image" src="https://user-images.githubusercontent.com/85722851/125231135-2769de00-e315-11eb-8b6e-f0e4711c2760.png">
 
