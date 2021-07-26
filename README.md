@@ -114,10 +114,9 @@ http a349aca93201b443cb8931e6193e56cb-252808345.ap-northeast-2.elb.amazonaws.com
 ![exhibition1](https://user-images.githubusercontent.com/86943781/126931572-ffd13acd-bae2-4db6-ab28-f800145f1b44.png)
 
 
-
-2. 고객이 휴양소를 선택하여 예약한다.
+2. 고객은 전시회를 선택하여 예약한다.
 ```sh
-http aa9c6a809425d45b69b139edc5237d53-1942883713.ap-northeast-2.elb.amazonaws.com:8080/reservations resortId=2 memberName="sim sang joon"
+http a349aca93201b443cb8931e6193e56cb-252808345.ap-northeast-2.elb.amazonaws.com:8080/reservations exhibitionId=2 memberName="seokwon"
 ```
 <img width="993" alt="image" src="https://user-images.githubusercontent.com/85722851/125231135-2769de00-e315-11eb-8b6e-f0e4711c2760.png">
 
