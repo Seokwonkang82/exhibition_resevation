@@ -430,6 +430,9 @@ kubectl apply -f resort/kubernetes/service.yaml.  #AWS service 등록
 - 최종 Deploy완료
 <img width="895" alt="image" src="https://user-images.githubusercontent.com/85722851/125232490-b4ae3200-e317-11eb-998c-88e5833866c7.png">
 
+![deploy](https://user-images.githubusercontent.com/86943781/126927286-a0a959f8-505d-4a97-afaf-bc11739c8099.png)
+
+
 ## 동기식 호출 / 서킷 브레이킹 / 장애격리
 
 * 서킷 브레이크 프레임워크 : Spring FeignClient + Hystrix 옵션을 사용
