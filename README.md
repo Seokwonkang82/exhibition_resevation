@@ -331,14 +331,15 @@ git clone https://github.com/simair77/resort_reservation.git
 ```
 - 각서비스별 packege, build, github push 실행
 ```bash
-cd resort #서비스별 폴더로 이동
+
+#서비스(exhibition, reservation, voucher, mypage, gatwway)별 처리
 mvn package -B -Dmaven.test.skip=true #패키지
 
-docker build -t simair/resort:latest . #docker build
-docker push simair/resort:latest       #docker push
+docker build -t iamsukwon82/exhibition:v1 . #docker build
+docker push iamsukwon82/exhibition:v1      #docker push
 
-kubectl apply -f resort/kubernetes/deployment.yml #AWS deploy 수행
-kubectl apply -f resort/kubernetes/service.yaml.  #AWS service 등록
+kubectl apply -f exhibition/kubernetes/deployment.yml #AWS deploy 수행
+kubectl apply -f exhibition/kubernetes/service.yaml   #AWS service 등록
 
 ```
 - Docker Hub Image
