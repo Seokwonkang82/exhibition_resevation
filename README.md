@@ -222,7 +222,11 @@ http aab08da4631a24878a5de445cefc53cc-516544677.ap-northeast-2.elb.amazonaws.com
 
 
 - 동기식 호출에서는 호출 시간에 따른 타임 커플링이 발생하며, 시스템이 장애로 예약을 못받는다는 것을 확인
-<img width="1019" alt="image" src="https://user-images.githubusercontent.com/85722851/125232225-2174fc80-e317-11eb-9186-98995cf27f97.png">
+- 동기식 호출에서 호출 받는 서비스에 문제가 생길 경우, 시스템 장애가 전파되는 것을 확인
+
+
+![sync2](https://user-images.githubusercontent.com/86943781/126966120-76fb96eb-3ddb-4c68-b801-bce28c21ea52.png)
+
 
 
 - 또한 과도한 요청시에 서비스 장애가 도미노 처럼 벌어질 수 있다. (서킷브레이커, 폴백 처리는 운영단계에서 설명한다.)
