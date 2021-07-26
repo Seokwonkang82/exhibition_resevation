@@ -113,7 +113,6 @@ http a349aca93201b443cb8931e6193e56cb-252808345.ap-northeast-2.elb.amazonaws.com
 ```
 ![exhibition1](https://user-images.githubusercontent.com/86943781/126931572-ffd13acd-bae2-4db6-ab28-f800145f1b44.png)
 
-
 2. 고객은 전시회를 선택하여 예약한다.
 ```sh
 http aab08da4631a24878a5de445cefc53cc-516544677.ap-northeast-2.elb.amazonaws.com:8080/reservations exhibitionId=1 memberName="seokwon"
@@ -140,21 +139,21 @@ http aab08da4631a24878a5de445cefc53cc-516544677.ap-northeast-2.elb.amazonaws.com
 ![fail](https://user-images.githubusercontent.com/86943781/126960492-9a1b29d9-a62d-465f-8237-f51c01f61d98.png)
 
 
-4. 고객이 확정된 예약을 취소할 수 있다.
+5. 고객이 확정된 예약을 취소할 수 있다.
 ```sh
 http PATCH aab08da4631a24878a5de445cefc53cc-516544677.ap-northeast-2.elb.amazonaws.com:8080/reservations/2 exhibitionStatus="Deleted"
 ```
 ![cancel](https://user-images.githubusercontent.com/86943781/126958950-9065d66d-942d-45dc-9f2e-535fc2918dd2.png)
 
 
-5. 예약이 취소되면 바우처가 비활성화 된다.
+6. 예약이 취소되면 바우처가 비활성화 된다.
 ```sh
 http aab08da4631a24878a5de445cefc53cc-516544677.ap-northeast-2.elb.amazonaws.com:8080/vouchers
 ```
 ![invalid](https://user-images.githubusercontent.com/86943781/126959144-a6aca9d9-4d76-4d27-8d50-52149dd4125e.png)
 
 
-6. 고객은 전시회 예약 정보를 확인 할 수 있다.
+7. 고객은 전시회 예약 정보를 확인 할 수 있다.
 ```sh
 http aab08da4631a24878a5de445cefc53cc-516544677.ap-northeast-2.elb.amazonaws.com:8080/mypages
 ```
