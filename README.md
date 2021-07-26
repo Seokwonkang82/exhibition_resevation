@@ -154,11 +154,12 @@ http aab08da4631a24878a5de445cefc53cc-516544677.ap-northeast-2.elb.amazonaws.com
 ![invalid](https://user-images.githubusercontent.com/86943781/126959144-a6aca9d9-4d76-4d27-8d50-52149dd4125e.png)
 
 
-6. 고객은 휴양소 예약 정보를 확인 할 수 있다.
+6. 고객은 전시회 예약 정보를 확인 할 수 있다.
 ```sh
-http aa9c6a809425d45b69b139edc5237d53-1942883713.ap-northeast-2.elb.amazonaws.com:8080/myPages
+http aab08da4631a24878a5de445cefc53cc-516544677.ap-northeast-2.elb.amazonaws.com:8080/mypages
 ```
-<img width="992" alt="image" src="https://user-images.githubusercontent.com/85722851/125231312-7c0d5900-e315-11eb-93bf-af4f025fc3d3.png">
+![mypages](https://user-images.githubusercontent.com/86943781/126960884-784432a3-05f4-42c9-bc02-5493f5bdaa04.png)
+
 
 ## DDD 의 적용
 - 위 이벤트 스토밍을 통해 식별된 Micro Service 전체 4개를 모두 구현하였으며 그 중 mypage는 CQRS를 위한 서비스이다.
