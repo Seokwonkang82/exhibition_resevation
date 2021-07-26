@@ -297,23 +297,26 @@ public class MyPageViewHandler {
 
 
 - 예약 시스템은 결제시스템/마이페이지 시스템과 완전히 분리되어있으며, 이벤트 수신에 따라 처리되기 때문에, 결제시스템/마이시스템이 유지보수로 인해 잠시 내려간 상태라도 예야을 받는데 문제가 없다:
-```bash
-# 마이페이지 서비스는 잠시 셧다운 시키고 결제시스템은 현재 미구현
 
-1.리조트입력
-http localhost:8082/resorts resortName="Jeju" resortType="Hotel" resortPrice=100000 resortStatus="Available" resortPeriod="7/23~25"
-http localhost:8082/resorts resortName="Seoul" resortType="Hotel" resortPrice=100000 resortStatus="Available" resortPeriod="7/23~25"
+1.마이페이지서비스 셧다운
 
 2.예약입력
-http localhost:8081/reservations resortId=2 memberName="sim sang joon" 
-http localhost:8081/reservations #예약 정상 처리 확인
+```bash
+http aab08da4631a24878a5de445cefc53cc-516544677.ap-northeast-2.elb.amazonaws.com:8080/reservations exhibitionId=1 memberName="seokwon"
+```
+![ansync2](https://user-images.githubusercontent.com/86943781/126969353-78dacd08-0b41-4a88-8089-21136f143915.png)
 
 3.마이페이지서비스 기동
 
-4.마이페이지확인
-http localhost:8083/myPages #정상적으로 마이페이지에서 예약 이력이 확인 됨
+![mypages3](https://user-images.githubusercontent.com/86943781/126970039-723e9d96-59f9-4ef5-8208-78821557f887.png)
 
-```
+4.마이페이지확인
+![mypages4](https://user-images.githubusercontent.com/86943781/126970204-41522643-e01d-4d21-b64c-2943e6db1c93.png)
+
+
+
+![image](https://user-images.githubusercontent.com/86943781/126969149-92361bcd-a1bf-4c83-a914-c0b6f21f8857.png)
+
 
 
 # 운영
