@@ -381,33 +381,13 @@ kubectl apply -f exhibition/kubernetes/deployment.yml
 - 시스템별로 또는 운영중에 동적으로 변경 가능성이 있는 설정들을 ConfigMap을 사용하여 관리합니다. Application에서 특정 도메일 URL을 ConfigMap 으로 설정하여 운영/개발등 목적에 맞게 변경가능합니다.
 configMap 생성
 
-![ex-cm](https://user-images.githubusercontent.com/86943781/126992371-d5b38856-4ddc-4654-9e84-c199a5e3ef3b.png)
+![comfig](https://user-images.githubusercontent.com/86943781/127022579-a93f59b2-89cc-44b9-bb28-acd2355aedb5.png)
+
 
 configmap 생성 후 조회
+![config1](https://user-images.githubusercontent.com/86943781/127022631-fcb0ebfe-13d8-46f8-9326-39d95ee77975.png)
 
-![configmap](https://user-images.githubusercontent.com/86943781/126992191-f8023da0-f6de-4d60-a3ea-00b941b40815.png)
 
-deployment.yml 변경
-```yml
-      containers:
-          ...
-          env:
-            - name: feign.resort.url
-              valueFrom:
-                configMapKeyRef:
-                  name: resort-cm
-                  key: api.resort.url
-```
-ResortService.java내용
-```java
-@FeignClient(name="resort", url="${feign.resort.url}")
-public interface ResortService {
-
-    @RequestMapping(method= RequestMethod.GET, value="/resorts/{id}", consumes = "application/json")
-    public Resort getResortStatus(@PathVariable("id") Long id);
-
-}
-```
 생성된 Pod 상세 내용 확인
 <img width="1036" alt="image" src="https://user-images.githubusercontent.com/85722851/125245075-162bcc00-e32b-11eb-80ab-81fa57e774d8.png">
 
