@@ -111,8 +111,8 @@ http a349aca93201b443cb8931e6193e56cb-252808345.ap-northeast-2.elb.amazonaws.com
 http a349aca93201b443cb8931e6193e56cb-252808345.ap-northeast-2.elb.amazonaws.com:8080/exhibitions exhibitionName="Picasso" exhibitionDate="20210812" exhibitionStatus="Available" exhibitionType="gallary"
 http a349aca93201b443cb8931e6193e56cb-252808345.ap-northeast-2.elb.amazonaws.com:8080/exhibitions
 ```
-<img width="992" alt="image" src="https://user-images.githubusercontent.com/85722851/125231090-1620d180-e315-11eb-9300-1beefa54e09c.png">
-![exhibition1](https://user-images.githubusercontent.com/86943781/126931534-ccb33872-1b57-4799-a309-ab2e0c25e099.png)
+![exhibition1](https://user-images.githubusercontent.com/86943781/126931572-ffd13acd-bae2-4db6-ab28-f800145f1b44.png)
+
 
 
 2. 고객이 휴양소를 선택하여 예약한다.
