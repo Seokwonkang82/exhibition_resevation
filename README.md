@@ -9,7 +9,7 @@
   - [분석/설계](#분석설계)
     - [AS-IS조직(Horizontally-Aligned)](#AS-IS-조직-(Horizontally-Aligned))
     - [TO-BE조직(Verticaaly-Aligned)](#TO-BE-조직-(Vertically-Aligned))
-    - [Event Storming 결과](#Event-Storming-결괴)
+    - [Event Storming 결과](#Event-Storming-결과)
   - [구현:](#구현-)
     - [시나리오 흐름 테스트](#시나리오-흐름-테스트)
     - [DDD 의 적용](#ddd-의-적용)
