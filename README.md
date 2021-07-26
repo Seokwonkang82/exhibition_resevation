@@ -262,13 +262,12 @@ server:
 - 타 마이크로서비스의 데이터 원본에 접근없이 내 서비스의 화면 구성과 잦은 조회가 가능하게 mypage에 CQRS 구현하였다.
 - 모든 정보는 비동기 방식으로 발행된 이벤트(예약, 예약취소)를 수신하여 처리된다.
 
-예약 실행
+예약실행 후 mypage 화면
 
 ![mypage2](https://user-images.githubusercontent.com/86943781/126962455-dcfb837d-0488-4279-bd03-b18c28c20491.png)
 
 
-
-예약/예약취소 후 mypage 화면
+예약취소 후 mypage 화면
 
 ![mypages](https://user-images.githubusercontent.com/86943781/126962523-897fc5e1-8050-4c1e-a59b-56b763b039eb.png)
 
