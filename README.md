@@ -92,8 +92,6 @@
 ![hexa](https://user-images.githubusercontent.com/86943781/126890207-f36343eb-0c12-4b11-955a-9f9e2e66df5f.png)
 
 
-
-
     - Chris Richardson, MSA Patterns 참고하여 Inbound adaptor와 Outbound adaptor를 구분함
     - 호출관계에서 PubSub 과 Req/Resp 를 구분함
     - 서브 도메인과 바운디드 컨텍스트의 분리:  각 팀의 KPI 별로 아래와 같이 관심 구현 스토리를 나눠가짐
@@ -196,6 +194,11 @@ http aab08da4631a24878a5de445cefc53cc-516544677.ap-northeast-2.elb.amazonaws.com
 예약취소 후 mypage 화면
 
 ![mypages](https://user-images.githubusercontent.com/86943781/126962523-897fc5e1-8050-4c1e-a59b-56b763b039eb.png)
+
+
+
+![image](https://user-images.githubusercontent.com/86943781/126986433-04f7d8d3-8b4c-4191-9d8b-4364fa7e1ac8.png)
+
 
 
 
