@@ -122,7 +122,6 @@ http aab08da4631a24878a5de445cefc53cc-516544677.ap-northeast-2.elb.amazonaws.com
 ![예약](https://user-images.githubusercontent.com/86943781/126958496-c71f423e-e165-4911-82bb-798f60cfaa54.png)
 
 
-
 4. 예약이 확정되면 바우처가 활성화 된다
 ```sh
 http aab08da4631a24878a5de445cefc53cc-516544677.ap-northeast-2.elb.amazonaws.com:8080/vouchers
@@ -130,20 +129,19 @@ http aab08da4631a24878a5de445cefc53cc-516544677.ap-northeast-2.elb.amazonaws.com
 ![vouchercre](https://user-images.githubusercontent.com/86943781/126958697-f9d6a033-fdd3-441f-9641-a8317445b279.png)
 
 
-
-
 4. 고객이 확정된 예약을 취소할 수 있다.
 ```sh
-http PATCH aa9c6a809425d45b69b139edc5237d53-1942883713.ap-northeast-2.elb.amazonaws.com:8080/reservations/1 resortStatus="Cancelled"
+http PATCH aab08da4631a24878a5de445cefc53cc-516544677.ap-northeast-2.elb.amazonaws.com:8080/reservations/2 exhibitionStatus="Deleted"
 ```
-<img width="994" alt="image" src="https://user-images.githubusercontent.com/85722851/125231248-5c763080-e315-11eb-9f58-0637fed3d099.png">
+![cancel](https://user-images.githubusercontent.com/86943781/126958950-9065d66d-942d-45dc-9f2e-535fc2918dd2.png)
 
 
-5. 휴양소는 예약 가능상태로 바뀐다.
+5. 예약이 취소되면 바우처가 비활성화 된다.
 ```sh
-http aa9c6a809425d45b69b139edc5237d53-1942883713.ap-northeast-2.elb.amazonaws.com:8080/resorts/2
+http aab08da4631a24878a5de445cefc53cc-516544677.ap-northeast-2.elb.amazonaws.com:8080/vouchers
 ```
-<img width="994" alt="image" src="https://user-images.githubusercontent.com/85722851/125231271-6c8e1000-e315-11eb-92e2-bcb2897f6449.png">
+![invalid](https://user-images.githubusercontent.com/86943781/126959144-a6aca9d9-4d76-4d27-8d50-52149dd4125e.png)
+
 
 6. 고객은 휴양소 예약 정보를 확인 할 수 있다.
 ```sh
