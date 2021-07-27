@@ -324,7 +324,7 @@ kubectl apply -f exhibition/kubernetes/service.yaml   #AWS service 등록
 - Hystrix 설정: 요청처리 쓰레드에서 처리시간이 610 밀리초가 넘어서기 시작하여 어느정도 유지되면 circuit breaker 수행됨
   ![hystix 선언](https://user-images.githubusercontent.com/86943781/126892940-fdb18554-e07a-4d97-b3c6-ec01d90162f3.png)
 
-- 피호출 서비스(휴양소:resort) 의 임의 부하 처리 - 400 밀리초 ~ 620밀리초의 지연시간 부여
+- 피호출 서비스(exhibition) 의 임의 부하 처리 - 400 밀리초 ~ 620밀리초의 지연시간 부여
   ![delay](https://user-images.githubusercontent.com/86943781/126892958-6000010b-3f36-4351-abe6-ec5ceb4b45f8.png)
 
 
