@@ -225,7 +225,7 @@ Kafka 메세지
 ```
 ![sync](https://user-images.githubusercontent.com/86943781/126963457-afe88f47-3420-4641-8c69-2888b1c87565.png)
 
-- 예약을 처리 하기 직전(@PrePersist)에 ResortSevice를 호출하여 서비스 상태와 Exhibition 세부정보도 가져온다.
+- 예약을 처리 하기 직전(@PrePersist)에 ExhibitionSevice를 호출하여 서비스 상태와 Exhibition 세부정보도 가져온다.
  
 ```java
 # Reservation.java (Entity)
