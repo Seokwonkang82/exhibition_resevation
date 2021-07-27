@@ -266,19 +266,20 @@ Kafka 메세지
 - 예약 시스템은 결제시스템/마이페이지 시스템과 완전히 분리되어있으며, 이벤트 수신에 따라 처리되기 때문에, 결제시스템/마이시스템이 유지보수로 인해 잠시 내려간 상태라도 예약을 받는데 문제가 없다:
 
 1.마이페이지서비스 셧다운
+![shutdown1](https://user-images.githubusercontent.com/86943781/127079892-d52d0ba9-4810-4378-b7bb-16185050456e.png)
+
 
 2.예약입력
 ```bash
 http aab08da4631a24878a5de445cefc53cc-516544677.ap-northeast-2.elb.amazonaws.com:8080/reservations exhibitionId=1 memberName="seokwon"
 ```
-![ansync2](https://user-images.githubusercontent.com/86943781/126969353-78dacd08-0b41-4a88-8089-21136f143915.png)
+![shutdown2](https://user-images.githubusercontent.com/86943781/127079873-3cf32f63-6915-408f-a818-cf24cf85c296.png)
 
 3.마이페이지서비스 기동
 
-![mypages3](https://user-images.githubusercontent.com/86943781/126970039-723e9d96-59f9-4ef5-8208-78821557f887.png)
-
 4.마이페이지확인
-![mypages4](https://user-images.githubusercontent.com/86943781/126970204-41522643-e01d-4d21-b64c-2943e6db1c93.png)
+![shutdown3](https://user-images.githubusercontent.com/86943781/127079885-dc7963a7-6fd1-4ee8-a88a-d5e8523e1d49.png)
+
 
 # 운영
 
