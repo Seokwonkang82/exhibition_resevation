@@ -135,7 +135,7 @@ http aab08da4631a24878a5de445cefc53cc-516544677.ap-northeast-2.elb.amazonaws.com
 ```
 ![vouchercre](https://user-images.githubusercontent.com/86943781/126958697-f9d6a033-fdd3-441f-9641-a8317445b279.png)
 
-4. 고객이 삭제된 전시회를 예약할 경우, 예약이 불가능하다.
+4. 고객이 취소된 전시회를 예약할 경우, 예약이 불가능하다.
 ```sh
 http aab08da4631a24878a5de445cefc53cc-516544677.ap-northeast-2.elb.amazonaws.com:8080/exhibitions
 ```
