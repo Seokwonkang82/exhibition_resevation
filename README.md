@@ -224,8 +224,6 @@ Kafka 메세지
 # (reservation) ExhibitionService.java
 ```
  ![fallback1](https://user-images.githubusercontent.com/86943781/127082078-0ac167a5-1539-4dd5-a7a8-bc64c69d671f.png)
- 
- ![fallback2](https://user-images.githubusercontent.com/86943781/127082088-79fbb3ee-77e9-40af-902d-6466a94b3550.png)
 
 
 - 예약을 처리 하기 직전(@PrePersist)에 ExhibitionSevice를 호출하여 서비스 상태와 exhibition 세부정보도 가져온다.
