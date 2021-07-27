@@ -397,5 +397,4 @@ configmap 생성 후 조회
 
 
 생성된 Pod 상세 내용 확인
-<img width="1036" alt="image" src="https://user-images.githubusercontent.com/85722851/125245075-162bcc00-e32b-11eb-80ab-81fa57e774d8.png">
 
