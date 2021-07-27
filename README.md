@@ -254,7 +254,7 @@ Kafka 메세지
 ![ansync3](https://user-images.githubusercontent.com/86943781/126984470-c06d6058-e765-458f-8688-3a5d7b4cac88.png)
 
 
-- 바우처시스템과 마이페이지시스템에서는 예약완료 이벤트에 대해서 이를 수신하여 자신의 정책을 처리하도록 PolicyHandler 를 구현한다
+- 바우처시스템과 마이페이지에서는 예약완료 이벤트에 대해서 이를 수신하여 자신의 정책을 처리하도록 PolicyHandler 를 구현한다
 
 ![policy](https://user-images.githubusercontent.com/86943781/126968039-6f0edf5f-a455-4c08-a1be-8a850253639e.png)
 
