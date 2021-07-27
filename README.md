@@ -223,15 +223,19 @@ Kafka 메세지
 ```java
 # (reservation) ExhibitionService.java
 ```
-![sync](https://user-images.githubusercontent.com/86943781/126963457-afe88f47-3420-4641-8c69-2888b1c87565.png)
+ ![fallback1](https://user-images.githubusercontent.com/86943781/127082078-0ac167a5-1539-4dd5-a7a8-bc64c69d671f.png)
+ 
+ ![fallback2](https://user-images.githubusercontent.com/86943781/127082088-79fbb3ee-77e9-40af-902d-6466a94b3550.png)
 
-- 예약을 처리 하기 직전(@PrePersist)에 ExhibitionSevice를 호출하여 서비스 상태와 Exhibition 세부정보도 가져온다.
+
+- 예약을 처리 하기 직전(@PrePersist)에 ExhibitionSevice를 호출하여 ![fallback3](https://user-images.githubusercontent.com/86943781/127082161-27016ea2-e93b-4d32-875e-544af118cd9f.png)
  
 ```java
 # Reservation.java (Entity)
 ```
 
-![reservation](https://user-images.githubusercontent.com/86943781/126901556-35cba206-e16c-44e1-a8cf-a94cf6baef5e.png)
+![Uploading fallback3.png…]()
+
 
 
 - 동기식 호출에서 호출 받는 서비스에 문제가 생길 경우, 시스템 장애가 전파되는 것을 확인
