@@ -326,6 +326,10 @@ kubectl apply -f exhibition/kubernetes/service.yaml   #AWS service 등록
 
 - 시나리오 : 예약(reservation) -> 전시(exhibition) 예약 시 Request/Response 로 구현이 하였고, 예약 요청이 과도할 경우 circuit breaker 를 통하여 장애격리.
 - Hystrix 설정: 요청처리 쓰레드에서 처리시간이 610 밀리초가 넘어서기 시작하여 어느정도 유지되면 circuit breaker 수행됨
+```
+resevation application.yaml
+
+```
   ![hystix 선언](https://user-images.githubusercontent.com/86943781/126892940-fdb18554-e07a-4d97-b3c6-ec01d90162f3.png)
 
 - 피호출 서비스(exhibition) 의 임의 부하 처리 - 400 밀리초 ~ 620밀리초의 지연시간 부여
