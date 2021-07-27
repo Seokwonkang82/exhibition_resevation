@@ -228,13 +228,13 @@ Kafka 메세지
  ![fallback2](https://user-images.githubusercontent.com/86943781/127082088-79fbb3ee-77e9-40af-902d-6466a94b3550.png)
 
 
-- 예약을 처리 하기 직전(@PrePersist)에 ExhibitionSevice를 호출하여 ![fallback3](https://user-images.githubusercontent.com/86943781/127082161-27016ea2-e93b-4d32-875e-544af118cd9f.png)
+- 예약을 처리 하기 직전(@PrePersist)에 ExhibitionSevice를 호출하여 서비스 상태와 exhibition 세부정보도 가져온다.
  
 ```java
 # Reservation.java (Entity)
 ```
+![sync3](https://user-images.githubusercontent.com/86943781/127082894-f3d6da4c-8aed-4e6c-8121-73f4c43c3f96.png)
 
-![Uploading fallback3.png…]()
 
 
 
