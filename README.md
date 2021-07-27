@@ -309,6 +309,10 @@ kubectl apply -f exhibition/kubernetes/service.yaml   #AWS service 등록
 - Docker Hub Image
 ![dockerimage](https://user-images.githubusercontent.com/86943781/126926356-44821b33-23bc-4e28-ad72-bb765589a3f3.png)
 
+![aws1](https://user-images.githubusercontent.com/86943781/127096522-0bc07e82-2bef-4a96-b129-d062b18c54c3.png)
+
+![aws2](https://user-images.githubusercontent.com/86943781/127096557-6657bec7-9c30-4002-aff2-c79a314dd291.png)
+
 
 - 최종 Deploy완료
 
