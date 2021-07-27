@@ -201,18 +201,16 @@ http aab08da4631a24878a5de445cefc53cc-516544677.ap-northeast-2.elb.amazonaws.com
 
 예약실행 후 mypage 화면
 
-![mypage2](https://user-images.githubusercontent.com/86943781/126962455-dcfb837d-0488-4279-bd03-b18c28c20491.png)
+![mypage3](https://user-images.githubusercontent.com/86943781/127077655-63fc1259-241e-4cae-81f2-c664217e038b.png)
 
 
 예약취소 후 mypage 화면
 
-![mypages](https://user-images.githubusercontent.com/86943781/126962523-897fc5e1-8050-4c1e-a59b-56b763b039eb.png)
+![mypage4](https://user-images.githubusercontent.com/86943781/127077682-cb6334df-bbf4-459f-92ad-9124d84a06ab.png)
+
 
 Kafka 메세지
-
-![image](https://user-images.githubusercontent.com/86943781/126986433-04f7d8d3-8b4c-4191-9d8b-4364fa7e1ac8.png)
-
-
+![kafka2](https://user-images.githubusercontent.com/86943781/127077696-c6a1935d-0c7d-42b9-9a5e-5cff9bab173d.png)
 
 
 ## 동기식 호출 과 Fallback 처리
